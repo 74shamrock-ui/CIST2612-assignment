@@ -1,0 +1,6 @@
+dd if=/dev/zero of=recovered_drive.raw bs=1M count=200 mkfs.ext4 recovered_drive.raw sha256sum recovered_drive.raw 
+md5sum recovered_drive.raw sudo nohup tcpdump -i eth0 -w phase2_transfer_capture_success.pcap host 129.80.96.171 
+>/tmp/tcpdump_phase2.log 2>&1 &
+scp -i ~/oracle_phase2.key ubuntu@129.80.96.171:~/phase2_target/recovered_drive.raw ~/evidence/phase2/ sha256sum 
+~/evidence/phase2/recovered_drive.raw md5sum ~/evidence/phase2/recovered_drive.raw
+tcpdump -r ~/evidence/phase2/phase2_transfer_capture_success.pcap | head

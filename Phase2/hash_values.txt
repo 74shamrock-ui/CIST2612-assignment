@@ -1,0 +1,4 @@
+recovered_drive.raw SHA256: b4c3300bfb779d1c48473678e117a1f890e7430c537a52d3e7dfee6088fd7b03 MD5: 
+2dd1eaf4f2ff9a4074d3b719d79e0ef2 Location: /home/kali-admin/evidence/phase2/recovered_drive.raw 
+phase2_transfer_capture_success.pcap
+Location: /home/kali-admin/evidence/phase2/phase2_transfer_capture_success.pcap
