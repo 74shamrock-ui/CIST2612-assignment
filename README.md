@@ -78,3 +78,28 @@ This repository contains:
 
 Digital Forensics Project  
 Kali Linux Investigation Environment
+## Project Progress
+### Phase 1
+Created the initial proposal, selected forensic tools, and planned a Kali Linux forensic environment based on a 
+cold-case hard drive recovery scenario involving a storage device recovered from a lake known to have been used as a 
+dumping ground for evidence.
+### Phase 2
+Created a simulated recovered drive on an Oracle Ubuntu VM, acquired it to a Kali Linux forensic workstation running 
+in Azure, verified evidence integrity with SHA256 and MD5 hashes, and captured the acquisition session in a PCAP file.
+### Phase 3
+Analyzed the recovered disk image and the network capture, identified evidence-like files including a hidden artifact 
+(`.archive.dat`), reconstructed the timeline of evidence preparation and transfer, and completed the final forensic 
+analysis report.
+## Evidence Collected
+- `recovered_drive.raw` - `phase2_transfer_capture_success.pcap`
+## Key Findings
+- The disk image contained multiple evidence-like files: - `case_notes.txt` - `interview_log.txt` - 
+  `custody_notes.txt` - `.archive.dat`
+- The hidden file `.archive.dat` was identified as the primary suspicious artifact. - The packet capture documented 
+the SSH/SCP transfer session used during evidence acquisition. - Hash verification confirmed the integrity of the 
+recovered disk image.
+## Repository Structure
+```text CIST2612-assignment ├── README.md ├── Initial_Proposal.docx ├── Phase2 │ ├── 
+Forensic_Acquisition_Report_Phase2.docx │ ├── hash_values.txt │ └── commands_used.txt └── Phase3
+    ├── Forensic_Analysis_Report_Phase3.docx ├── disk_analysis_notes.txt ├── network_analysis_notes.txt
+    └── timeline_summary.txt
