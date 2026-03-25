@@ -1,0 +1,5 @@
+Timeline Summary 1. Simulated evidence disk created on Oracle target VM 2. Evidence-like files added: - case_notes.txt 
+   - interview_log.txt - custody_notes.txt - .archive.dat
+3. Disk finalized and prepared for acquisition 4. Kali initiated SSH connection to Oracle VM 5. SCP transfer session 
+captured in PCAP
+6. Disk image stored on Kali and verified with hashes

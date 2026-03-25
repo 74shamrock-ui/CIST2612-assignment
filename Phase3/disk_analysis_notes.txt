@@ -1,0 +1,3 @@
+Evidence analyzed: recovered_drive.raw Primary tools used: - fsstat - fls - strings Observed files: - case_notes.txt - 
+interview_log.txt - custody_notes.txt - .archive.dat Suspicious artifact:
+- .archive.dat (hidden file)
