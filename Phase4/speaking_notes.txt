@@ -1,0 +1,10 @@
+This project simulated a forensic investigation involving a hard drive recovered from a lake known to have been used 
+as a dumping ground for cold-case evidence. In Phase 1, I planned the forensic environment and selected the tools. In 
+Phase 2, I created a simulated recovered drive on an Oracle Ubuntu VM and acquired it to a Kali forensic workstation 
+running in Azure. I also captured the acquisition traffic in a PCAP file and verified the integrity of the evidence 
+with SHA256 and MD5 hashes. In Phase 3, I analyzed the acquired disk image and packet capture. The disk image 
+contained several evidence-like files, including case notes, interview logs, custody notes, and a hidden file named 
+.archive.dat. The hidden file was the most suspicious artifact because it appeared intentionally concealed. The PCAP 
+showed the SSH/SCP acquisition session between the Oracle target and the Kali workstation. This confirmed that the 
+evidence transfer occurred as documented.
+My overall conclusion is that the acquisition and preservation process was successful, the evidence remained intact, and the hidden file would be the top priority for deeper analysis in a real investigation.
